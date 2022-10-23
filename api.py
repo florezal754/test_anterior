@@ -14,11 +14,9 @@ CORS(app)
 
 @app.route("/")
 def home():
-	start_date = input('Introduce date: ')
-
 	return '<p>hola</p>'
 
-@app.route('/https://marginal-signals.herokuapp.com/historical')
+@app.route('/historical')
 def historical():
     start_date = input('Introduce date: ')
     end_date = input('Introduce date: ')
